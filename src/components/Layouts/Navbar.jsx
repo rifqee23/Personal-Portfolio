@@ -1,6 +1,8 @@
 import Button from "../Elements/Button";
 import IconExample from "../Elements/Button/Icon";
 import { useState } from "react";
+import { RxHamburgerMenu } from "react-icons/rx";
+import { IoCloseSharp } from "react-icons/io5";
 
 const Navbar = (props) => {
   const { children } = props;
@@ -19,9 +21,15 @@ const Navbar = (props) => {
           }`}
         >
           <h1 className="text-3xl font-bold">Rifqi Febrianto</h1>
-          <div className={`absolute top-0 right-10 md:hidden `}>
+          <div className={`absolute top-0 right-5 md:hidden `}>
             <Button onClick={handleNav}>
-              <IconExample />
+              <IconExample>
+                {nav ? (
+                  <IoCloseSharp size={40} />
+                ) : (
+                  <RxHamburgerMenu size={40} />
+                )}
+              </IconExample>
             </Button>
           </div>
           <div className={` md:block ${nav ? "block" : "hidden"}`}>
@@ -30,6 +38,7 @@ const Navbar = (props) => {
             >
               <li className="font-semibold text-lg text-center">Home</li>
               <li className="font-semibold text-lg text-center">About</li>
+              <li className="font-semibold text-lg text-center">Project</li>
               <li className="font-semibold text-lg">Contact</li>
             </ul>
           </div>

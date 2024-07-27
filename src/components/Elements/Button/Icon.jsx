@@ -1,11 +1,8 @@
 import React from "react";
-import { RxHamburgerMenu } from "react-icons/rx";
-const IconExample = () => {
-  return (
-    <div>
-      <RxHamburgerMenu size={40} />
-    </div>
-  );
+
+const IconExample = (props) => {
+  const { children } = props;
+  return <div>{children}</div>;
 };
 
 export default IconExample;
