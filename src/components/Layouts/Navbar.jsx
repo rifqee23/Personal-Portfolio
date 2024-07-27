@@ -14,7 +14,7 @@ const Navbar = (props) => {
   };
   return (
     <>
-      <div className={`${nav ? ` bg-blue-300` : ""} px-8 w-full py-2`}>
+      <div className={`${nav ? ` bg-blue-300` : ""} lg:px-20 px-8 w-full py-2`}>
         <nav
           className={`flex w-full justify-between items-center ${
             nav && "flex-col"
