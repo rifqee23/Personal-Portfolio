@@ -14,14 +14,10 @@ const Navbar = (props) => {
   };
   return (
     <>
-      <div
-        className={`${
-          nav ? ` bg-blue-300` : ""
-        } lg:px-20 px-8  py-2 lg:fixed lg:top-0 lg:right-0 lg:left-0`}
-      >
+      <div className="mb-10 lg:mb-0">
         <nav
-          className={`flex w-full justify-between items-center ${
-            nav && "flex-col"
+          className={`flex w-full justify-between items-center fixed top-0 right-0 left-0 lg:px-20 px-8 py-2   ${
+            nav ? `flex-col bg-blue-300` : "bg-white"
           }`}
         >
           <h1 className="text-3xl font-bold">Rifqi Febrianto</h1>

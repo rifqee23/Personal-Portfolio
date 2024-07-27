@@ -13,7 +13,7 @@ import { SiPhp } from "react-icons/si";
 const Hero = () => {
   return (
     <>
-      <div className="w-full h-screen lg:flex lg:justify-center  px-4 lg:px-20">
+      <div className="w-full lg:h-screen lg:flex lg:justify-center  px-4 lg:px-20">
         <div className="pt-10  lg:flex lg:flex-row-reverse">
           <div className="lg:w-1/2 lg:pt-20 xl:pt-32">
             <div className="flex justify-center mb-10 lg:pl-36">
@@ -61,7 +61,7 @@ const Hero = () => {
               </Button>
             </div>
 
-            <div className="mt-10">
+            <div className="mt-8">
               <h3 className="text-3xl font-bold">Social Media</h3>
               <div className="flex mt-4 gap-6">
                 <a
@@ -94,7 +94,7 @@ const Hero = () => {
                 </a>
               </div>
             </div>
-            <div className="mt-10">
+            <div className="my-8">
               <h1 className="text-3xl font-bold">Tech Stack</h1>
               <div className="flex gap-6 mt-4 items-center">
                 <FaHtml5 size={40} color="#e44d26" />
