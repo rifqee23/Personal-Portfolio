@@ -12,7 +12,7 @@ const Project = (props) => {
           Project
         </p>
       </div>
-      <div className="flex gap-10">
+      <div className="flex flex-col items-center lg:flex-row gap-10">
         {web.map((item, index) => {
           return (
             <Card
