@@ -95,32 +95,32 @@ const Hero = () => {
               <h1 className="text-3xl font-bold">Tech Stack</h1>
               <div className="flex gap-6 mt-4 items-center">
                 <FaHtml5
-                  size={40}
+                  size={60}
                   color="#e44d26"
                   className="hover:scale-110 duration-500 cursor-pointer"
                 />
                 <FaCss3Alt
-                  size={40}
+                  size={60}
                   color="#2965f1"
                   className="hover:scale-110 duration-500 cursor-pointer"
                 />
                 <IoLogoJavascript
-                  size={40}
+                  size={60}
                   color="#e5de00"
                   className="hover:scale-110 duration-500 cursor-pointer"
                 />
                 <FaReact
-                  size={40}
+                  size={60}
                   color="#00a8ff"
                   className="hover:scale-110 duration-500 cursor-pointer"
                 />
                 <RiTailwindCssFill
-                  size={40}
+                  size={60}
                   color="#38bdf8"
                   className="hover:scale-110 duration-500 cursor-pointer"
                 />
                 <SiPhp
-                  size={50}
+                  size={80}
                   color="#7A86B8"
                   className="hover:scale-110 duration-500 cursor-pointer"
                 />

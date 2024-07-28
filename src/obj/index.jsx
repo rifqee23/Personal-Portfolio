@@ -1,5 +1,7 @@
 import { FaReact } from "react-icons/fa";
 import { RiTailwindCssFill } from "react-icons/ri";
+import { FaHtml5 } from "react-icons/fa";
+import { SiPhp } from "react-icons/si";
 
 /**
  * An array of objects representing websites.
@@ -24,6 +26,28 @@ export const web = [
     icon: [
       <FaReact key={"react"} size={32} className="text-sky-500" />,
       <RiTailwindCssFill key={"tailwind"} size={32} className="text-sky-500" />,
+    ],
+  },
+  {
+    image: "/images/wheelz.jpg",
+    link: "/nopublish",
+    name: "Wheelz",
+    desc: "My personal portfolio",
+    icon: [
+      <FaHtml5 key={"html"} size={32} className="text-orange-600" />,
+      <RiTailwindCssFill key={"tailwind"} size={32} className="text-sky-500" />,
+      <SiPhp key={"php"} size={32} className="text-violet-600" />,
+    ],
+  },
+  {
+    image: "/images/wheelzAdmin.jpg",
+    link: "/nopublish",
+    name: "Wheelz Admin",
+    desc: "My personal portfolio",
+    icon: [
+      <FaHtml5 key={"html"} size={32} className="text-orange-600" />,
+      <RiTailwindCssFill key={"tailwind"} size={32} className="text-sky-500" />,
+      <SiPhp key={"php"} size={32} className="text-violet-600" />,
     ],
   },
 ];

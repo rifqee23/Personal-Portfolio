@@ -12,17 +12,19 @@ const Project = (props) => {
           Project
         </p>
       </div>
-      {web.map((item, index) => {
-        return (
-          <Card
-            key={index}
-            src={item.image}
-            title={item.name}
-            techIcons={item.icon}
-            link={item.link}
-          ></Card>
-        );
-      })}
+      <div className="flex gap-10">
+        {web.map((item, index) => {
+          return (
+            <Card
+              key={index}
+              src={item.image}
+              title={item.name}
+              techIcons={item.icon}
+              link={item.link}
+            ></Card>
+          );
+        })}
+      </div>
     </div>
   );
 };
