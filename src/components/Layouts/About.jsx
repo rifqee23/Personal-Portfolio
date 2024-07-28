@@ -8,7 +8,7 @@ const About = () => {
         className="w-full px-8 pb-4 pt-10  mx-auto bg-[#0a192f] text-gray-300 "
       >
         <div className="max-w-6xl mx-auto p-4 ">
-          <p className="text-4xl font-bold inline border-b-4 border-pink-600 ms-4">
+          <p className="text-4xl font-bold inline border-b-4 border-pink-600">
             About Me
           </p>
         </div>

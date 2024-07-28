@@ -61,7 +61,7 @@ const Skills = () => {
                 alt="HTML icon"
               />
               <div>
-                <p className="my-4">React</p>
+                <p className="my-4">Tailwind</p>
                 <p className="my-4">Advanced</p>
               </div>
             </div>

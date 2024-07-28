@@ -46,14 +46,25 @@ const Navbar = (props) => {
               <li className="font-semibold text-lg text-center">
                 <a href="#project">Project</a>
               </li>
-              <li className="font-semibold text-lg">Contact</li>
+              <li className="font-semibold text-lg">
+                <a href="#contact">Contact</a>
+              </li>
             </ul>
           </div>
         </nav>
       </div>
 
       {children}
+      <Footer />
     </>
+  );
+};
+
+const Footer = () => {
+  return (
+    <div className="text-center py-5 mt-4">
+      © 2024. Rifqi Febrianto. All rights reserved.
+    </div>
   );
 };
 
