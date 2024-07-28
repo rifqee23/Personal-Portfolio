@@ -3,13 +3,16 @@ import Skills from "../Fragments/Skills";
 const About = () => {
   return (
     <>
-      <div className="w-full px-8 py-4  mx-auto bg-[#0a192f] text-gray-300 ">
+      <div
+        id="about"
+        className="w-full px-8 pb-4 pt-10  mx-auto bg-[#0a192f] text-gray-300 "
+      >
         <div className="max-w-6xl mx-auto p-4 ">
           <p className="text-4xl font-bold inline border-b-4 border-pink-600 ms-4">
             About Me
           </p>
         </div>
-        <div className="lg:flex lg:flex-row-reverse mt-16">
+        <div className="lg:flex lg:flex-row-reverse lgmt-16">
           <div className="lg:w-1/2">
             <p className="mt-4 text-md font-semibold">
               Halo! Nama saya Rifqi Febrianto, seorang pengembang web yang

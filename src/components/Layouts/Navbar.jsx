@@ -3,6 +3,7 @@ import IconExample from "../Elements/Button/Icon";
 import { useState } from "react";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { IoCloseSharp } from "react-icons/io5";
+import { Link } from "react-router-dom";
 
 const Navbar = (props) => {
   const { children } = props;
@@ -16,7 +17,7 @@ const Navbar = (props) => {
     <>
       <div className="mb-10 lg:mb-0">
         <nav
-          className={`flex w-full justify-between items-center fixed top-0 right-0 left-0 lg:px-20 px-8 py-2   ${
+          className={`flex w-full justify-between items-center fixed top-0 right-0 left-0 lg:px-20 px-8 py-2 z-50  ${
             nav ? `flex-col bg-blue-300` : "bg-white"
           }`}
         >
@@ -36,9 +37,15 @@ const Navbar = (props) => {
             <ul
               className={`flex gap-4 ${nav && `flex-col justify-center mt-5`}`}
             >
-              <li className="font-semibold text-lg text-center">Home</li>
-              <li className="font-semibold text-lg text-center">About</li>
-              <li className="font-semibold text-lg text-center">Project</li>
+              <li className="font-semibold text-lg text-center">
+                <a href="#">Home</a>
+              </li>
+              <li className="font-semibold text-lg text-center">
+                <a href="#about">About</a>
+              </li>
+              <li className="font-semibold text-lg text-center">
+                <a href="#project">Project</a>
+              </li>
               <li className="font-semibold text-lg">Contact</li>
             </ul>
           </div>
