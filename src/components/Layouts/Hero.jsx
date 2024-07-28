@@ -48,16 +48,9 @@ const Hero = () => {
                 widths="w-40"
                 textColor="text-white"
                 hover="hover:bg-zinc-700"
+                onClick={() => (window.location.href = "#project")}
               >
                 Get Started
-              </Button>
-              <Button
-                colors="bg-black"
-                widths="w-40"
-                textColor="text-white"
-                hover="hover:bg-zinc-700"
-              >
-                Download CV
               </Button>
             </div>
 
