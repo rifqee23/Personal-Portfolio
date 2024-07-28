@@ -22,7 +22,7 @@ const Navbar = (props) => {
           }`}
         >
           <a href="#" className="text-3xl font-bold">
-            Rifqi Febrianto
+            Rifqi
           </a>
           <div className={`absolute top-0 right-5 md:hidden `}>
             <Button onClick={handleNav}>
