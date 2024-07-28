@@ -21,7 +21,9 @@ const Navbar = (props) => {
             nav ? `flex-col bg-blue-300` : "bg-white"
           }`}
         >
-          <h1 className="text-3xl font-bold">Rifqi Febrianto</h1>
+          <a href="#" className="text-3xl font-bold">
+            Rifqi Febrianto
+          </a>
           <div className={`absolute top-0 right-5 md:hidden `}>
             <Button onClick={handleNav}>
               <IconExample>
