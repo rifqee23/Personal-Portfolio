@@ -4,9 +4,11 @@ const About = () => {
   return (
     <>
       <div className="w-full px-8 py-4  mx-auto bg-[#0a192f] text-gray-300 ">
-        <p className="text-4xl font-bold inline border-b-4 border-pink-600 ms-48">
-          About Me
-        </p>
+        <div className="max-w-6xl mx-auto p-4 ">
+          <p className="text-4xl font-bold inline border-b-4 border-pink-600 ms-4">
+            About Me
+          </p>
+        </div>
         <div className="lg:flex lg:flex-row-reverse mt-16">
           <div className="lg:w-1/2">
             <p className="mt-4 text-md font-semibold">
@@ -23,7 +25,7 @@ const About = () => {
             </p>
           </div>
 
-          <div className="lg:w-1/2 flex justify-center">
+          <div className="lg:w-1/2 flex justify-center mt-4 lg:mt-0">
             <img
               src="/images/photo.jpg"
               alt="abouts"
