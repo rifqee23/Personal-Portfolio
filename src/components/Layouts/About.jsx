@@ -1,24 +1,38 @@
+import Skills from "../Fragments/Skills";
+
 const About = () => {
   return (
     <>
-      <div className="w-full px-8 py-4">
-        <h1 className="text-center text-2xl font-bold">About Page</h1>
-
-        <p className="mt-4 text-md">
-          Halo! Nama saya Rifqi Febrianto, seorang pengembang web yang
-          berdedikasi dengan hasrat khusus pada pengembangan frontend. Saya
-          memiliki keahlian dalam menciptakan antarmuka pengguna yang menarik
-          dan responsif.
+      <div className="w-full px-8 py-4  mx-auto bg-[#0a192f] text-gray-300 ">
+        <p className="text-4xl font-bold inline border-b-4 border-pink-600 ms-48">
+          About Me
         </p>
+        <div className="lg:flex lg:flex-row-reverse mt-16">
+          <div className="lg:w-1/2">
+            <p className="mt-4 text-md font-semibold">
+              Halo! Nama saya Rifqi Febrianto, seorang pengembang web yang
+              berdedikasi dengan hasrat khusus pada pengembangan frontend. Saya
+              memiliki keahlian dalam menciptakan antarmuka pengguna yang
+              menarik dan responsif. Sebagai mahasiswa, saya telah memulai
+              perjalanan saya dalam dunia web development dengan fokus pada
+              teknologi terbaru seperti React, HTML, CSS, dan JavaScript. Saya
+              telah bekerja pada beberapa proyek akademis dan pribadi yang
+              mencakup pembuatan situs web dan aplikasi sederhana. Saya
+              berkomitmen untuk terus belajar dan berkembang, baik melalui
+              pembelajaran mandiri maupun keterlibatan dalam proyek-proyek baru.
+            </p>
+          </div>
 
-        <p className="mt-4 text-md">
-          Sebagai mahasiswa, saya telah memulai perjalanan saya dalam dunia web
-          development dengan fokus pada teknologi terbaru seperti React, HTML,
-          CSS, dan JavaScript. Saya telah bekerja pada beberapa proyek akademis
-          dan pribadi yang mencakup pembuatan situs web dan aplikasi sederhana.
-          Saya berkomitmen untuk terus belajar dan berkembang, baik melalui
-          pembelajaran mandiri maupun keterlibatan dalam proyek-proyek baru.
-        </p>
+          <div className="lg:w-1/2 flex justify-center">
+            <img
+              src="/images/photo.jpg"
+              alt="abouts"
+              width={400}
+              height={400}
+            />
+          </div>
+        </div>
+        <Skills />
       </div>
     </>
   );

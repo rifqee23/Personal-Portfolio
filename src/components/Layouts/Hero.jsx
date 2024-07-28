@@ -65,13 +65,15 @@ const Hero = () => {
               <h3 className="text-3xl font-bold">Social Media</h3>
               <div className="flex mt-4 gap-6">
                 <a
-                  href="http://instagram.com/rifqi_febrianto"
+                  className="hover:scale-110 duration-500"
+                  href="http://instagram.com/_qee3i"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   <SlSocialInstagram size={40} color="#000" />
                 </a>
                 <a
+                  className="hover:scale-110 duration-500"
                   href="http://www.linkedin.com/in/m-rifqi-febrianto-47b46b255/"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -79,6 +81,7 @@ const Hero = () => {
                   <FaLinkedin size={40} color="#000" />
                 </a>
                 <a
+                  className="hover:scale-110 duration-500"
                   href="http://www.facebook.com/profile.php?id=100008287424275&locale=id_ID"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -86,6 +89,7 @@ const Hero = () => {
                   <FaFacebookSquare size={40} color="#000" />
                 </a>
                 <a
+                  className="hover:scale-110 duration-500"
                   href="http://github.com/rifqee23"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -97,12 +101,36 @@ const Hero = () => {
             <div className="my-8">
               <h1 className="text-3xl font-bold">Tech Stack</h1>
               <div className="flex gap-6 mt-4 items-center">
-                <FaHtml5 size={40} color="#e44d26" />
-                <FaCss3Alt size={40} color="#2965f1" />
-                <IoLogoJavascript size={40} color="#e5de00" />
-                <FaReact size={40} color="#00a8ff" />
-                <RiTailwindCssFill size={40} color="#38bdf8" />
-                <SiPhp size={50} color="#7A86B8" />
+                <FaHtml5
+                  size={40}
+                  color="#e44d26"
+                  className="hover:scale-110 duration-500 cursor-pointer"
+                />
+                <FaCss3Alt
+                  size={40}
+                  color="#2965f1"
+                  className="hover:scale-110 duration-500 cursor-pointer"
+                />
+                <IoLogoJavascript
+                  size={40}
+                  color="#e5de00"
+                  className="hover:scale-110 duration-500 cursor-pointer"
+                />
+                <FaReact
+                  size={40}
+                  color="#00a8ff"
+                  className="hover:scale-110 duration-500 cursor-pointer"
+                />
+                <RiTailwindCssFill
+                  size={40}
+                  color="#38bdf8"
+                  className="hover:scale-110 duration-500 cursor-pointer"
+                />
+                <SiPhp
+                  size={50}
+                  color="#7A86B8"
+                  className="hover:scale-110 duration-500 cursor-pointer"
+                />
               </div>
             </div>
           </div>

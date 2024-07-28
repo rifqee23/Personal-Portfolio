@@ -7,6 +7,7 @@ const HomePage = () => {
     <div className="container mx-auto">
       <Navbar>
         <Hero />
+        <About />
       </Navbar>
     </div>
   );
