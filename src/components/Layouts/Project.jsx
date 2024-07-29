@@ -1,6 +1,20 @@
 import { web } from "../../obj/index.jsx";
 import Card from "../Fragments/Card.jsx";
 
+import React, { useRef, useState } from "react";
+// Import Swiper React components
+import { Swiper, SwiperSlide } from "swiper/react";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/effect-coverflow";
+import "swiper/css/pagination";
+
+import "./styles.css";
+
+// import required modules
+import { EffectCoverflow, Pagination } from "swiper/modules";
+
 const Project = (props) => {
   return (
     <div
@@ -13,17 +27,33 @@ const Project = (props) => {
         </p>
       </div>
       <div className="flex flex-col items-center lg:flex-row gap-10">
-        {web.map((item, index) => {
-          return (
-            <Card
-              key={index}
-              src={item.image}
-              title={item.name}
-              techIcons={item.icon}
-              link={item.link}
-            ></Card>
-          );
-        })}
+        <Swiper
+          effect={"coverflow"}
+          grabCursor={true}
+          centeredSlides={true}
+          slidesPerView={"auto"}
+          coverflowEffect={{
+            rotate: 50,
+            stretch: 0,
+            depth: 100,
+            modifier: 1,
+            slideShadows: true,
+          }}
+          pagination={true}
+          modules={[EffectCoverflow, Pagination]}
+          className="mySwiper"
+        >
+          {web.map((web) => (
+            <SwiperSlide key={web.id}>
+              <Card
+                src={web.image}
+                title={web.name}
+                techIcons={web.icon}
+                link={web.link}
+              />
+            </SwiperSlide>
+          ))}
+        </Swiper>
       </div>
     </div>
   );

@@ -32,7 +32,6 @@ export const web = [
     image: "/images/wheelz.jpg",
     link: "/nopublish",
     name: "Wheelz",
-    desc: "My personal portfolio",
     icon: [
       <FaHtml5 key={"html"} size={32} className="text-orange-600" />,
       <RiTailwindCssFill key={"tailwind"} size={32} className="text-sky-500" />,
@@ -43,7 +42,16 @@ export const web = [
     image: "/images/wheelzAdmin.jpg",
     link: "/nopublish",
     name: "Wheelz Admin",
-    desc: "My personal portfolio",
+    icon: [
+      <FaHtml5 key={"html"} size={32} className="text-orange-600" />,
+      <RiTailwindCssFill key={"tailwind"} size={32} className="text-sky-500" />,
+      <SiPhp key={"php"} size={32} className="text-violet-600" />,
+    ],
+  },
+  {
+    image: "/images/minGym.png",
+    link: "/nopublish",
+    name: "MinGym",
     icon: [
       <FaHtml5 key={"html"} size={32} className="text-orange-600" />,
       <RiTailwindCssFill key={"tailwind"} size={32} className="text-sky-500" />,
