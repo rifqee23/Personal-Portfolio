@@ -1,4 +1,8 @@
 import React, { useState } from "react";
+import Label from "../Elements/Label";
+import Button from "../Elements/Button";
+import Input from "../Elements/Input";
+import TextArea from "../Elements/Input/TextArea";
 
 const ContactForm = () => {
   const [name, setName] = useState("");
@@ -16,63 +20,42 @@ const ContactForm = () => {
       className="max-w-lg mx-auto p-4 bg-gray-100 rounded shadow-md"
     >
       <div className="mb-4">
-        <label
-          className="block text-gray-700 text-sm font-bold mb-2"
-          htmlFor="name"
-        >
-          Name
-        </label>
-        <input
+        <Label htFor="name">Name</Label>
+        <Input
           id="name"
           type="text"
           value={name}
-          onChange={(e) => setName(e.target.value)}
-          className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-          required
+          onChanges={(e) => setName(e.target.value)}
         />
       </div>
       <div className="mb-4">
-        <label
-          className="block text-gray-700 text-sm font-bold mb-2"
-          htmlFor="email"
-        >
-          Email
-        </label>
-        <input
+        <Label htFor="email">Email</Label>
+        <Input
           id="email"
           type="email"
           value={email}
-          onChange={(e) => setEmail(e.target.value)}
-          className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-          required
+          onChanges={(e) => setEmail(e.target.value)}
         />
       </div>
       <div className="mb-4">
-        <label
-          className="block text-gray-700 text-sm font-bold mb-2"
-          htmlFor="message"
-        >
-          Message
-        </label>
-        <textarea
+        <Label htFor="message">Message</Label>
+        <TextArea
           id="message"
           value={message}
-          onChange={(e) => setMessage(e.target.value)}
-          className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-          rows="5"
-          required
+          onChanges={(e) => setMessage(e.target.value)}
         />
       </div>
       <div className="flex items-center justify-between">
-        <button
+        <Button
           type="submit"
-          className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+          colors="bg-blue-500 hover:bg-blue-700"
+          textColor="text-white"
+          widths="w-full"
         >
           Send
-        </button>
+        </Button>
       </div>
     </form>
   );
 };
-
 export default ContactForm;

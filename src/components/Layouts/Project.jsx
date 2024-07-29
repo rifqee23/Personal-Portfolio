@@ -10,7 +10,7 @@ import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 
-import "./styles.css";
+import "../../SwiperStyle/styles.css";
 
 // import required modules
 import { EffectCoverflow, Pagination } from "swiper/modules";
@@ -43,8 +43,8 @@ const Project = (props) => {
           modules={[EffectCoverflow, Pagination]}
           className="mySwiper"
         >
-          {web.map((web) => (
-            <SwiperSlide key={web.id}>
+          {web.map((web, index) => (
+            <SwiperSlide key={index}>
               <Card
                 src={web.image}
                 title={web.name}

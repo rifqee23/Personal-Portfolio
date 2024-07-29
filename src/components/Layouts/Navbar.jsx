@@ -1,9 +1,7 @@
 import Button from "../Elements/Button";
-import IconExample from "../Elements/Button/Icon";
 import { useState } from "react";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { IoCloseSharp } from "react-icons/io5";
-import { Link } from "react-router-dom";
 
 const Navbar = (props) => {
   const { children } = props;
@@ -18,37 +16,37 @@ const Navbar = (props) => {
       <div className="mb-10 lg:mb-0">
         <nav
           className={`flex w-full justify-between items-center fixed top-0 right-0 left-0 lg:px-20 px-8 py-2 z-50  ${
-            nav ? `flex-col bg-blue-300` : "bg-white"
+            nav
+              ? `flex-col bg-blue-300 animate-slideDown`
+              : "bg-white animate-slideUp"
           }`}
         >
-          <a href="#" className="text-3xl font-bold">
+          <a href="#" className="text-3xl font-bold text-slate-700">
             Rifqi
           </a>
           <div className={`absolute top-0 right-5 md:hidden `}>
             <Button onClick={handleNav}>
-              <IconExample>
-                {nav ? (
-                  <IoCloseSharp size={40} />
-                ) : (
-                  <RxHamburgerMenu size={40} />
-                )}
-              </IconExample>
+              {nav ? <IoCloseSharp size={40} /> : <RxHamburgerMenu size={40} />}
             </Button>
           </div>
-          <div className={` md:block ${nav ? "block" : "hidden"}`}>
+          <div
+            className={`md:block ${
+              nav ? "block animate-slideDown" : "hidden animate-slideUp"
+            }`}
+          >
             <ul
               className={`flex gap-4 ${nav && `flex-col justify-center mt-5`}`}
             >
-              <li className="font-semibold text-lg text-center">
+              <li className="font-semibold text-lg text-center text-slate-700 hover:text-slate-400">
                 <a href="#">Home</a>
               </li>
-              <li className="font-semibold text-lg text-center">
+              <li className="font-semibold text-lg text-center text-slate-700 hover:text-slate-400">
                 <a href="#about">About</a>
               </li>
-              <li className="font-semibold text-lg text-center">
+              <li className="font-semibold text-lg text-center text-slate-700 hover:text-slate-400">
                 <a href="#project">Project</a>
               </li>
-              <li className="font-semibold text-lg">
+              <li className="font-semibold text-lg text-center text-slate-700 hover:text-slate-400">
                 <a href="#contact">Contact</a>
               </li>
             </ul>

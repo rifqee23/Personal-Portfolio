@@ -3,7 +3,7 @@ const Button = (props) => {
   return (
     <>
       <button
-        className={`${colors} ${textColor} py-2 ${widths} ${hover} transition delay-100 rounded`}
+        className={`${colors} ${textColor} py-2 ${widths} ${hover} transition delay-100 rounded font-semibold`}
         onClick={onClick}
       >
         {children}

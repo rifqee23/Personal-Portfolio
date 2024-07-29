@@ -14,7 +14,7 @@ const About = () => {
         </div>
         <div className="lg:flex lg:flex-row-reverse lgmt-16">
           <div className="lg:w-1/2">
-            <p className="mt-4 text-md font-semibold">
+            <p className="mt-4 text-lg font-semibold">
               Halo! Nama saya Rifqi Febrianto, seorang pengembang web yang
               berdedikasi dengan hasrat khusus pada pengembangan frontend. Saya
               memiliki keahlian dalam menciptakan antarmuka pengguna yang
