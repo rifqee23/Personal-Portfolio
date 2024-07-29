@@ -9,6 +9,7 @@ This is my personal portfolio website built with React and Vite. The website sho
 - **Tailwind CSS**: A utility-first CSS framework.
 - **React Icons**: Popular icons as React components.
 - **React Router**: Declarative routing for React.
+- **Swiper JS**: A modern, responsive slider library.
 
 ## Live Demo
 
@@ -35,6 +36,7 @@ You can view the live website at [Personal Portfolio](https://personal-portfolio
 - **tailwindcss**: Utility-first CSS framework.
 - **postcss**: Tool for transforming CSS with JavaScript plugins.
 - **autoprefixer**: PostCSS plugin to parse CSS and add vendor prefixes.
+- **swiper**: JavaScript library for creating modern sliders.
 
 ## Contact
 
