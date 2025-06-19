@@ -24,17 +24,17 @@ const Hero = () => {
               Hi, I'm Rifqi
             </h1>
             <h3 className="text-3xl font-semibold text-center text-gray-600 mt-4 lg:text-left">
-              Frontend Developer
+              Web Development
             </h3>
 
             <p className="mt-5 text-md  text-slate-800 leading-normal text-center lg:text-left">
-              Saya adalah seorang developer frontend yang berdedikasi, berbasis
-              di Indonesia, dan masih pemula. Saya memiliki keahlian dalam
-              menciptakan antarmuka web yang indah dan fungsional menggunakan
-              React, HTML, CSS, dan JavaScript. Saya menikmati mengubah ide
-              menjadi pengalaman pengguna yang menarik dan terus berupaya
-              mengasah keterampilan saya melalui pembelajaran berkelanjutan dan
-              proyek-proyek praktis.
+              Hai! Saya Rifqi, web developer asal Indonesia yang sedang
+              berkembang dari frontend ke semi full-stack. Saya suka bikin UI
+              yang enak dilihat dan juga tertarik ngulik backend pakai Node.js
+              dan Express. Proyek-proyek yang saya kerjakan membantu saya
+              belajar banyak soal membangun aplikasi dari tampilan sampai
+              database. Masih terus belajar, tapi selalu siap buat tantangan
+              baru.
             </p>
             <div className="w-full mt-10 flex justify-center gap-4 lg:justify-start">
               <Button

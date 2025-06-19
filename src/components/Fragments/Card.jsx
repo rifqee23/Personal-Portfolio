@@ -4,7 +4,7 @@ const Card = (props) => {
   const { src, title, techIcons, children, link } = props;
   return (
     <>
-      <figure className="bg-slate-100 max-w-sm w-full rounded-xl p-8 h-80 dark:bg-slate-800">
+      <figure className="bg-slate-800 max-w-sm w-full rounded-xl p-8 h-80 dark:bg-slate-800">
         <div className="flex flex-col h-full justify-between">
           <div>
             <div className="relative bg-blue-600 w-full group">
@@ -28,7 +28,7 @@ const Card = (props) => {
               <p className="text-lg font-medium text-white">“{title}.”</p>
             </blockquote>
             <p className="text-white font-semibold">Build With:</p>
-            <div className="mt-2 flex gap-4">{techIcons}</div>
+            <div className="mt-2 flex gap-4 hover:bg-amber-50 rounded-xl  px-2">{techIcons}</div>
           </div>
         </div>
       </figure>
