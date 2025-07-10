@@ -5,8 +5,6 @@ import { SiPhp } from "react-icons/si";
 import { RiNextjsFill } from "react-icons/ri";
 import { SiExpress } from "react-icons/si";
 
-
-
 /**
  * An array of objects representing websites.
  * Each object has the following properties:
@@ -65,22 +63,29 @@ export const web = [
   {
     image: "/images/cssunila.png",
     link: "https://www.cssunila.com/",
-    name : "CSS Unila",
+    name: "CSS Unila",
     icon: [
       <RiTailwindCssFill key={"tailwind"} size={32} className="text-sky-500" />,
       <RiNextjsFill key={"nextjs"} size={32} />,
-
-    ]
+    ],
   },
   {
     image: "/images/z4in.png",
     link: "https://supply-chain-frontend-245g.vercel.app/",
-    name : "Z4IN - Supply-Chain",
+    name: "Z4IN - Supply-Chain",
     icon: [
       <RiTailwindCssFill key={"tailwind"} size={32} className="text-sky-500" />,
       <FaReact key={"react"} size={32} className="text-sky-500" />,
-      <SiExpress key={"express"} size={32} />
-
-    ]
-  }
+      <SiExpress key={"express"} size={32} />,
+    ],
+  },
+  {
+    image: "images/beritakini.png",
+    link: "https://sean-project.vercel.app/",
+    name: "Beritakini",
+    icon: [
+      <RiTailwindCssFill key={"tailwind"} size={32} className="text-sky-500" />,
+      <FaReact key={"react"} size={32} className="text-sky-500" />,
+    ],
+  },
 ];
